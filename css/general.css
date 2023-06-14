@@ -7,7 +7,7 @@
 
 body {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
 }
@@ -18,7 +18,7 @@ main {
     align-items: center;
     margin-top: 50px;
     width: 100%;
-    height: calc(100% - 50px);
+    height: calc(100vh - 50px);
     overflow: visible;
 }
 
