@@ -43,7 +43,7 @@
     border-radius: 20px;
     border: 1px solid #595858;
     color: #3a3a3a;
-    width: 40%;
+    width: 50%;
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
@@ -56,6 +56,6 @@
 }
 
 .value-type {
-    width: 60%;
+    width: 50%;
     text-align: center;
 }
