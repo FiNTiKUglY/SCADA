@@ -32,11 +32,11 @@
 }
 
 .table thead th:nth-child(2) {
-    width: 80%;
+    width: 75%;
 	text-align: left;
 }
 
 .table tbody td:nth-child(2) {
-    width: 80%;
+    width: 75%;
 	text-align: left;
 }
