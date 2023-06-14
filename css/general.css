@@ -20,6 +20,7 @@ main {
     width: 100%;
     height: calc(100vh - 50px);
     overflow: visible;
+    padding-bottom: 25px;
 }
 
 a {
