@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/general.css" rel="stylesheet">
+        <link href="css/nav-menu.css" rel="stylesheet">
+        <link href="css/scada.css" rel="stylesheet">
+        <title>Тест</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html">
+                        <div>
+                            <p>Главная</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="FCpreferences.html">
+                        <div>
+                            <p>ПЧ</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="preferences.html">
+                        <div>
+                            <p>Настройки</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="logs.html">
+                        <div>
+                            <p>События</p>
+                        </div>
+                    </a>   
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section class="information">
+                <div class="logo">
+                    <img src="img/logo.png" class="logo-img">
+                    <p class="desc-type">Белоруснефть<br>Промсервис</p>
+                </div>
+                <div class="info-tab">
+                    <div class="desc-container">
+                        <p class="desc-num">Местный</p>
+                    </div>
+                    <div class="desc-container">
+                        <p class="desc-num">Работа</p>
+                    </div>
+                </div>
+            </section>
+            <section class="scheme">
+                <div class="full-water">
+                    <div class="water-desc">
+                        <div class="desc-item">
+                            <p class="desc-type">Уровень</p>
+                            <p class="desc-num" id="level">40%</p>
+                        </div>
+                        <div class="desc-item">
+                            <p class="desc-type">Температура</p>
+                            <p class="desc-num" id="temp">50°C</p>
+                        </div>
+                        <div class="desc-item">
+                            <p class="desc-type" id="process">Подогрев реагента</p>
+                        </div>                
+                    </div>
+                    <div class="fill-water"></div>
+                    <div class="error-msg">
+                        <p>Низкий уровень реагента</p>
+                    </div>
+                </div>
+                <div class="tube1">
+                </div>
+                <div class="circle">
+                    <div class="top-msg">
+                        <p>400Hz</p>
+                    </div>
+                    <div class="triangle"></div>
+                    <div class="error-msg">
+                        <p>Авария ПЧ</p>
+                    </div>
+                </div>
+                <div class="tube2">
+                    <div class="top-msg">
+                        <p>Требуемый расход</p>
+                        <p class="desc-type">250л/ч</p>
+                    </div>
+                </div>
+            </section>
+            <section class="information">
+                <div class="pressure">
+                    <p>Давление</p>
+                    <p class="pres-value">20МПа</p>
+                    <div class="pres-range">
+                        min
+                        <p class="pres-value">20МПа</p>
+                        max
+                        <p class="pres-value">20МПа</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

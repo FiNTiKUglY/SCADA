@@ -1,0 +1,38 @@
+.nav-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    width: 100vw;
+    height: 50px;
+    border-bottom: 1px solid black;
+    background-color: rgb(168, 166, 166);
+}
+
+.nav-item {
+    width: 100%;
+    min-width: 90px;
+    max-width: 210px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information {
+    width: 100%;
+    height: 15%;
+}
+
+.logo {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-img {
+    width: 3.5em;
+    height: 3.5em;
+}

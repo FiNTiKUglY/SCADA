@@ -1,0 +1,46 @@
+.preferences {
+    min-width: 350px;
+    width: 70%;
+    height: 50%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.pref-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pref-p {
+    font-size: 1.15em;
+}
+
+.pref-value {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    width: 25%;
+}
+
+.input-num {
+    border-radius: 20px;
+    border: 1px solid #595858;
+    color: #3a3a3a;
+    width: 40%;
+    padding-left: 10px;
+}
+   
+.input-num:focus {
+    outline: none;
+    border: 2px solid #000000;
+    color: #000000;
+}
+
+.value-type {
+    width: 60%;
+    text-align: center;
+}
