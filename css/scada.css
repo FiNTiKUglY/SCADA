@@ -31,6 +31,7 @@
     left: 4px;
     width: 30%;
     min-width: 140px;
+    min-height: 40%;
     max-height: 90%;
     aspect-ratio: 1 / 1.6;
     z-index: 3;
@@ -74,11 +75,11 @@
     aspect-ratio: 1 / 1;
     border-radius: 100%;
     width: 13%;
-    max-width: 100px;
+    max-width: 80px;
     min-width: 30px;
     background-color: white;
     z-index: 5;
-    scale: 1.2;
+    scale: 1.15;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,6 +128,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .pres-range {
