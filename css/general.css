@@ -84,3 +84,7 @@ ul {
 .desc-num {
     font-size: 1.5em;
 }
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
