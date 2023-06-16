@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
         <link href="css/general.css" rel="stylesheet">
         <link href="css/nav-menu.css" rel="stylesheet">
         <link href="css/scada.css" rel="stylesheet">
@@ -42,6 +43,10 @@
         </nav>
         <main>
             <section class="information">
+                <div class="time">
+                    <p class="desc-type">13:15</p>
+                    <p class="desc-type">12.10.2023</p>
+                </div>
                 <div class="logo">
                     <img src="img/logo.png" class="logo-img">
                     <p class="desc-type">Белоруснефть<br>Промсервис</p>
@@ -52,11 +57,11 @@
                     <div class="water-desc">
                         <div class="desc-item">
                             <p class="desc-type">Уровень</p>
-                            <p class="desc-num" id="level">40%</p>
+                            <p class="desc-num" id="level">%d%%</p>
                         </div>
                         <div class="desc-item">
                             <p class="desc-type">Температура</p>
-                            <p class="desc-num" id="temp">50°C</p>
+                            <p class="desc-num" id="temp">%d°C</p>
                         </div>
                         <div class="desc-item">
                             <p class="desc-type" id="process">Подогрев реагента</p>
@@ -79,7 +84,7 @@
                 </div>
                 <div class="circle">
                     <div class="top-msg">
-                        <p class="desc-min">400Hz</p>
+                        <p class="desc-min">%dHz</p>
                     </div>
                     <div class="triangle"></div>
                     <div class="error-msg">
@@ -95,21 +100,22 @@
                 <div class="blank">
                     <div class="top-msg">
                         <div class="container-border">
-                            <p>Требуемый<br>расход</p>
-                            <p class="desc-type">250л/ч</p>
+                            <p>Требуемый</p>
+                            <p>расход</p>
+                            <p class="desc-type">%dл/ч</p>
                         </div>
                     </div>
                     <div class="pressure-container">
                         <div class="container-border">
                             <p>Давление</p>
-                            <p class="pres-value">20МПа</p>
+                            <p class="pres-value">%dМПа</p>
                             <div class="pres-range">
                                 min
-                                <p class="pres-value">20МПа</p>
+                                <p class="pres-value">%dМПа</p>
                             </div>
                             <div class="pres-range">
                                 max
-                                <p class="pres-value">20МПа</p>
+                                <p class="pres-value">%dМПа</p>
                             </div>
                         </div>                   
                     </div>

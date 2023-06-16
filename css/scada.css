@@ -76,7 +76,7 @@
     border-radius: 100%;
     width: 13%;
     max-width: 80px;
-    min-width: 30px;
+    min-width: 40px;
     background-color: white;
     z-index: 5;
     scale: 1.15;
@@ -138,8 +138,7 @@
 .blank {
     position: relative;
     top: 15%;
-    left: 20px;
-    width: calc(35% - 30px);
+    left: 5%;
     height: 5%;
 }
 
@@ -156,7 +155,7 @@
 
 .pressure-container {
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 125%;
     display: flex;
     flex-direction: column;
