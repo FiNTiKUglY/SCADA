@@ -49,29 +49,94 @@
                 </div>
             </section>
             <section class="container">
-                <ul class="preferences">
-                    <li class="pref-item">
-                        <p class="pref-p">Установка необходимого расхода</p>
-                        <div class="pref-value">
-                            <input type="text" class="input-num" value="%d">
-                            <p class="value-type pref-p">л/ч</p>
-                        </div>
-                    </li>
-                    <li class="pref-item">
-                        <p class="pref-p">Установка min давления</p>
-                        <div class="pref-value">
-                            <input type="text" class="input-num" value="%d">
-                            <p class="value-type pref-p">МПа</p>
-                        </div>
-                    </li>
-                    <li class="pref-item">
-                        <p class="pref-p">Установка max давления</p>
-                        <div class="pref-value" >
-                            <input type="text" class="input-num" value="%d">
-                            <p class="value-type pref-p">МПа</p>
-                        </div>
-                    </li>
-                </ul>
+                <form method="post">
+                    <ul class="preferences">
+                        <li>
+                            <p class="section-name">Настройки дозатора</p>
+                            <ul class="preferences-section">
+                                <li class="pref-item">
+                                    <p class="pref-p">Установка необходимого расхода</p>
+                                    <div class="pref-value">
+                                        <input name="waste" type="text" class="input-num" value="%d">
+                                        <p class="value-type pref-p">л/ч</p>
+                                    </div>
+                                </li>
+                                <li class="pref-item">
+                                    <p class="pref-p">Установка min давления</p>
+                                    <div class="pref-value">
+                                        <input name="min_pres" type="text" class="input-num" value="%d">
+                                        <p class="value-type pref-p">МПа</p>
+                                    </div>
+                                </li>
+                                <li class="pref-item">
+                                    <p class="pref-p">Установка max давления</p>
+                                    <div class="pref-value" >
+                                        <input name="max_pres" type="text" class="input-num" value="%d">
+                                        <p class="value-type pref-p">МПа</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="section-name">Настройки АПВ</p>
+                            <ul class="preferences-section">
+                                <li class="pref-item">
+                                    <p class="pref-p">Количество АПВ</p>
+                                    <div class="pref-value">
+                                        <input name="error-quantity" type="text" class="input-num" value="%d">
+                                        <p class="value-type pref-p"></p>
+                                    </div>
+                                </li>
+                                <li class="pref-item">
+                                    <p class="pref-p">Интервал обнуления АПВ</p>
+                                    <div class="pref-value">
+                                        <input name="error-interval" type="text" class="input-num" value="%d">
+                                        <p class="value-type pref-p">ч</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="section-name">Настройки счётчиков</p>
+                            <ul class="preferences-section">
+                                <li class="pref-item">
+                                    <p class="pref-p">Установка счётчика наработки до ТО</p>
+                                    <div class="pref-value">
+                                        <input name="TO-time" type="text" class="input-num" value="%d">
+                                        <p class="value-type pref-p">ч</p>
+                                    </div>
+                                </li>
+                                <li class="pref-item">
+                                    <p class="pref-p">Сброс счётчика ТО</p>
+                                    <div class="pref-value">
+                                        <input type="button" class="input-value" value="Сброс">
+                                    </div>
+                                </li>
+                                <li class="pref-item">
+                                    <p class="pref-p">Сброс объёма</p>
+                                    <div class="pref-value">
+                                        <input type="button" class="input-value" value="Сброс">
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="section-name">Настройки производительности насоса</p>
+                            <ul class="preferences-section">
+                                <li class="pref-item">
+                                    <p class="pref-p">Значение</p>
+                                    <div class="pref-value">
+                                        <input name="moment-waste" type="text" class="input-num" value="%d">
+                                        <p class="value-type pref-p">л/ч</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input type="submit" class="button" value="Подтвердить">
+                        </li>
+                    </ul>
+                </form>
             </section>
         </main>
     </body>

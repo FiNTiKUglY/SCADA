@@ -11,12 +11,13 @@
 .table {
 	width: 100%;
 	border: none;
+	table-layout: fixed;
 }
 
 .table thead th {
+	overflow-wrap: break-word;
     padding: 5px;
 	font-weight: 500;
-	line-height: 3.5em;
 	text-align: center;
 	color: #444441;
 	border-top: 2px solid #716561;
@@ -24,6 +25,7 @@
 }
 
 .table tbody td {
+	word-wrap: break-word;
 	padding: 5px;
 	text-align: center;
 	line-height: 40px;
@@ -31,12 +33,42 @@
 	border-top: 1px solid #716561;
 }
 
+.table thead th:nth-child(1) {
+    width: 25%;
+}
+
 .table thead th:nth-child(2) {
-    width: 75%;
-	text-align: left;
+    width: 48%;
+}
+
+.table thead th:nth-child(3) {
+    width: 10%;
+}
+
+.table thead th:nth-child(4) {
+    width: 10%;
+}
+
+.table thead th:nth-child(5) {
+    width: 7%;
+}
+
+.table tbody td:nth-child(1) {
+    width: 25%;
 }
 
 .table tbody td:nth-child(2) {
-    width: 75%;
-	text-align: left;
+    width: 48%;
+}
+
+.table tbody td:nth-child(3) {
+    width: 10%;
+}
+
+.table tbody td:nth-child(4) {
+    width: 10%;
+}
+
+.table tbody td:nth-child(5) {
+    width: 7%;
 }

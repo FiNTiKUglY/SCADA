@@ -43,7 +43,7 @@
         </nav>
         <main>
             <section class="information">
-                <div class="time">
+                <div id="time" class="time">
                     <p class="desc-type">13:15</p>
                     <p class="desc-type">12.10.2023</p>
                 </div>
@@ -67,7 +67,7 @@
                             <p class="desc-type" id="process">Подогрев реагента</p>
                         </div>                
                     </div>
-                    <div class="fill-water"></div>
+                    <div class="fill-water" id="fill-water"></div>
                     <div class="error-msg">
                         <p>Низкий уровень реагента</p>
                     </div>
@@ -75,8 +75,9 @@
                         <div class="desc-container">
                             <p class="desc-num">Местный</p>
                         </div>
-                        <div class="desc-container">
+                        <div id="state" class="desc-container">
                             <p class="desc-num">Работа</p>
+                            <p id="rem-time" class="desc-min">12 мин</p>
                         </div>
                     </div>
                 </div>
@@ -100,8 +101,7 @@
                 <div class="blank">
                     <div class="top-msg">
                         <div class="container-border">
-                            <p>Требуемый</p>
-                            <p>расход</p>
+                            <p>Расход</p>
                             <p class="desc-type">%dл/ч</p>
                         </div>
                     </div>
@@ -109,11 +109,11 @@
                         <div class="container-border">
                             <p>Давление</p>
                             <p class="pres-value">%dМПа</p>
-                            <div class="pres-range">
+                            <div style="color: red" id="min-pres" class="pres-range">
                                 min
                                 <p class="pres-value">%dМПа</p>
                             </div>
-                            <div class="pres-range">
+                            <div style="color: green" id="min-pres" class="pres-range">
                                 max
                                 <p class="pres-value">%dМПа</p>
                             </div>
@@ -122,8 +122,11 @@
                 </div>
             </section>
             <section class="information">
-                
+                <input id="button-on" type="button" value="1-ый">
+                <input id="button-wait" type="button" value="2-ый">
+                <input id="button-off" type="button" value="3-ый">
             </section>
         </main>
+        <script type="module" src="js/main.js"></script>
     </body>
 </html>

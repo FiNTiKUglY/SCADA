@@ -10,7 +10,7 @@
     justify-content: center;
 }
 
-.preferences {  
+.preferences {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,6 +18,20 @@
     border: 2px solid black;
     border-radius: 50px;
     padding: 5%;
+}
+
+.preferences-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.section-name {
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 15px;
+    font-size: max(0.85rem, 18px);
 }
 
 .pref-item {
@@ -29,7 +43,7 @@
 
 .pref-p {
     width: 70%;
-    font-size: 1.5em;
+    font-size: max(0.7rem, 16px);
 }
 
 .pref-value {
@@ -40,10 +54,22 @@
 }
 
 .input-num {
+    font-size: max(0.7rem, 16px);
     border-radius: 20px;
     border: 1px solid #595858;
     color: #3a3a3a;
-    width: 50%;
+    width: 60%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.input-value {
+    font-size: max(0.7rem, 16px);
+    border-radius: 20px;
+    border: 1px solid #595858;
+    color: #3a3a3a;
+    width: 100%;
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
@@ -56,6 +82,35 @@
 }
 
 .value-type {
-    width: 50%;
+    width: 40%;
     text-align: center;
+}
+
+.button {
+    background-color: #47c515;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 500;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    float: right;
+    margin-right: 5%;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #4ff16a;
 }

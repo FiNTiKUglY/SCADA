@@ -31,6 +31,9 @@
     padding: 10px;
     display: flex;
     flex-direction: row;
+    opacity: 50%;
+    z-index: 0;
+    display: none;
 }
 
 .time {

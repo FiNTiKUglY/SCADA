@@ -49,30 +49,88 @@
                 </div>
             </section>
             <section class="container">
-                <ul class="preferences">
-                    <li class="pref-item">
-                        <p class="pref-p">Напряжение сети</p>
-                        <div class="pref-value">
-                            <input type="text" class="input-num" value="%d">
-                            <p class="value-type pref-p">В</p>
-                        </div>
-                    </li>
-                    <li class="pref-item">
-                        <p class="pref-p">Ток</p>
-                        <div class="pref-value">
-                            <input type="text" class="input-num" value="%d">
-                            <p class="value-type pref-p">А</p>
-                        </div>
-                    </li>
-                    <li class="pref-item">
-                        <p class="pref-p">Частота</p>
-                        <div class="pref-value" >
-                            <input type="text" class="input-num" value="%d">
-                            <p class="value-type pref-p">Hz</p>
-                        </div>
-                    </li>
-                </ul>
+                <form method="post">
+                    <ul class="preferences">
+                        <li class="pref-item">
+                            <p class="pref-p">Напряжение ПЧ</p>
+                            <div class="pref-value">
+                                <input type="text" class="input-num" value="%d" disabled>
+                                <p class="value-type pref-p">В</p>
+                            </div>
+                        </li>
+                        <li class="pref-item">
+                            <p class="pref-p">Ток ПЧ</p>
+                            <div class="pref-value">
+                                <input type="text" class="input-num" value="%d" disabled>
+                                <p class="value-type pref-p">А</p>
+                            </div>
+                        </li>
+                        <li class="pref-item">
+                            <p class="pref-p">Частота ПЧ</p>
+                            <div class="pref-value" >
+                                <input type="text" class="input-num" value="%d" disabled>
+                                <p class="value-type pref-p">Hz</p>
+                            </div>
+                        </li>
+                        <li class="pref-item">
+                            <p class="pref-p">Частота задание</p>
+                            <div class="pref-value" >
+                                <input type="text" class="input-num" value="%d" disabled>
+                                <p class="value-type pref-p">Hz</p>
+                            </div>
+                        </li>
+                        <li class="pref-item">
+                            <p class="pref-p">Режим работы</p>
+                            <div class="pref-value">
+                                <input id="state" type="text" class="input-value" value="%s" disabled>
+                            </div>
+                        </li>
+                        <li class="pref-item" id="pause-time">
+                            <p class="pref-p">Время паузы</p>
+                            <div class="pref-value" >
+                                <input type="text" class="input-num" value="%d" disabled>
+                                <p class="value-type pref-p">мин</p>
+                            </div>
+                        </li>
+                        <li class="pref-item" id="work-time">
+                            <p class="pref-p">Время работы</p>
+                            <div class="pref-value" >
+                                <input type="text" class="input-num" value="%d" disabled>
+                                <p class="value-type pref-p">мин</p>
+                            </div>
+                        </li>
+                        <li class="pref-item">
+                            <p class="pref-p">Общий счётчик наработки</p>
+                            <div class="pref-value" >
+                                <input type="text" class="input-num" value="%d" disabled>
+                                <p class="value-type pref-p">ч</p>
+                            </div>
+                        </li>
+                        <li class="pref-item">
+                            <p class="pref-p">Счётчик до ТО</p>
+                            <div class="pref-value" >
+                                <input type="text" class="input-num" value="%d" disabled>
+                                <p class="value-type pref-p">ч</p>
+                            </div>
+                        </li>
+                        <li class="pref-item">
+                            <p class="pref-p">Общий объём</p>
+                            <div class="pref-value" >
+                                <input type="text" class="input-num" value="%d" disabled>
+                                <p class="value-type pref-p">м<sup class="pref-p">3</sup></p>
+                            </div>
+                        </li>
+                        <li class="pref-item">
+                            <p class="pref-p">Объём за сутки</p>
+                            <div class="pref-value" >
+                                <input type="text" class="input-num" value="%d" disabled>
+                                <p class="value-type pref-p">м<sup class="pref-p">3</sup></p>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
             </section>
+            <script type="module" src="/js/prefs.js"></script>
         </main>
     </body>
 </html>
