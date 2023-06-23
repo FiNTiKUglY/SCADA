@@ -73,7 +73,7 @@ ul {
 }
 
 .desc-container {
-    border: 5px solid black;
+    border: 3px solid black;
     border-radius: 30px;
     padding: 5px;
     display: flex;
@@ -86,8 +86,13 @@ ul {
     font-size: 0.9em;
 }
 
+.desc-mini {
+    font-size: 0.6em;
+}
+
+
 .desc-type {
-    font-size: 1.25em;
+    font-size: 1.1em;
     text-align: center;
 }
 

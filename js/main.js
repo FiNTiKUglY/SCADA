@@ -1,3 +1,5 @@
+let remaining_time = parseInt(document.getElementById("rem-time").innerHTML) * 60
+
 function turn_on() {
     let state = document.getElementById("state")
     state.firstElementChild.innerHTML = "Работа"
@@ -16,24 +18,47 @@ function turn_off() {
     check_state()
 }
 
+function change_water_error() {
+    let error = document.getElementById("water-error")
+    if (error.style.display == "none") {
+        error.style.display = "block"
+    }
+    else {
+        error.style.display = "none"
+    }
+}
+
+function change_doze_error() {
+    let error = document.getElementById("doze-error")
+    if (error.style.display == "none") {
+        error.style.display = "block"
+    }
+    else {
+        error.style.display = "none"
+    }
+}
+
 function check_state() {
     let state = document.getElementById("state")
     console.log(state.firstElementChild.innerHTML);
     if (state.firstElementChild.innerHTML == "Работа") {
         state.style.backgroundColor = "#47ff6f";
+        if (parseInt(state.lastElementChild.innerHTML) == -1) {
+            state.lastElementChild.innerHTML = `непрерывная`
+        }
     }
     else if (state.firstElementChild.innerHTML == "Ожидание") {
         state.style.backgroundColor = "#faef52";
     }
     else {
         state.style.backgroundColor = "#ff6161";
+        state.lastElementChild.style.display = "none"
     }
 }
 
 function update_time() {
     let time = document.getElementById("time").firstElementChild
     let date = document.getElementById("time").lastElementChild
-    let remaining_time = parseInt(document.getElementById("rem-time").innerHTML)
     let curr_date = new Date()
 
     let dd = curr_date.getDate()
@@ -57,7 +82,7 @@ function update_time() {
     if (remaining_time < 1) {
         location.reload()
     }
-    document.getElementById("rem-time").innerHTML = `${remaining_time} мин`
+    document.getElementById("rem-time").innerHTML = `${Math.ceil(remaining_time / 60)} мин`
 }
 
 function check_level() {
@@ -69,9 +94,12 @@ function check_level() {
 document.getElementById("button-on").addEventListener("click", turn_on)
 document.getElementById("button-wait").addEventListener("click", wait)
 document.getElementById("button-off").addEventListener("click", turn_off)
+document.getElementById("button-water").addEventListener("click", change_water_error)
+document.getElementById("button-doze").addEventListener("click", change_doze_error)
+
 
 
 update_time()
-setInterval(update_time, 60000);
+setInterval(update_time, 1000);
 check_state()
 check_level()

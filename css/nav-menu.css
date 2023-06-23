@@ -12,8 +12,11 @@
 
 .nav-item {
     width: 100%;
-    min-width: 90px;
-    max-width: 210px;
+    min-width: 72px;
+    max-width: 240px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: wheat;
     height: 50px;
     display: flex;
     align-items: center;

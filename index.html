@@ -21,7 +21,7 @@
                 <li class="nav-item">
                     <a href="FCpreferences.html">
                         <div>
-                            <p>ПЧ</p>
+                            <p>Состояние</p>
                         </div>
                     </a>
                 </li>
@@ -36,6 +36,13 @@
                     <a href="logs.html">
                         <div>
                             <p>События</p>
+                        </div>
+                    </a>   
+                </li>
+                <li class="nav-item">
+                    <a href="charts.html">
+                        <div>
+                            <p>График</p>
                         </div>
                     </a>   
                 </li>
@@ -54,6 +61,10 @@
             </section>
             <section class="scheme">
                 <div class="full-water">
+                    <p class="title desc-mini">Ёмкость</p>
+                    <div class="level">
+                        <div class="fill-water" id="fill-water"></div>
+                    </div>
                     <div class="water-desc">
                         <div class="desc-item">
                             <p class="desc-type">Уровень</p>
@@ -65,31 +76,32 @@
                         </div>
                         <div class="desc-item">
                             <p class="desc-type" id="process">Подогрев реагента</p>
-                        </div>                
-                    </div>
-                    <div class="fill-water" id="fill-water"></div>
-                    <div class="error-msg">
-                        <p>Низкий уровень реагента</p>
-                    </div>
-                    <div class="info-tab">
-                        <div class="desc-container">
-                            <p class="desc-num">Местный</p>
                         </div>
-                        <div id="state" class="desc-container">
-                            <p class="desc-num">Работа</p>
-                            <p id="rem-time" class="desc-min">12 мин</p>
-                        </div>
+                        <div class="desc-item">
+                            <p id="water-error" class="error-msg">Низкий уровень реагента</p>
+                        </div>       
                     </div>
                 </div>
                 <div class="tube1">
                 </div>
                 <div class="circle">
                     <div class="top-msg">
-                        <p class="desc-min">%dHz</p>
+                        <div class="info-tab">
+                            <p class="desc-mini">Блок непрерывного дозирования</p>
+                            <div class="desc-container">
+                                <p class="desc-type">%s</p>
+                            </div>
+                            <div id="state" class="desc-container">
+                                <p class="desc-type">%s</p>
+                                <div class="border"></div>
+                                <p id="rem-time" class="desc-min">%d мин</p>
+                            </div>
+                        </div>  
+                        <p class="desc-min">30Гц</p>
                     </div>
                     <div class="triangle"></div>
-                    <div class="error-msg">
-                        <p class="desc-min">Авария ПЧ</p>
+                    <div class="bottom-msg">
+                        <p id="doze-error" class="desc-min error-msg">Авария ПЧ</p>
                     </div>
                 </div>
                 <div class="tube2">
@@ -100,6 +112,13 @@
                 </div>
                 <div class="blank">
                     <div class="top-msg">
+                        <div class="info-tab">
+                            <div class="container-border">
+                                <p class="desc-type">Объём</p>
+                                <p>Суммарный<br>%dм³</p>
+                                <p>Суточный<br>%dм³</p>
+                            </div>
+                        </div>
                         <div class="container-border">
                             <p>Расход</p>
                             <p class="desc-type">%dл/ч</p>
@@ -107,7 +126,7 @@
                     </div>
                     <div class="pressure-container">
                         <div class="container-border">
-                            <p>Давление</p>
+                            <p class="desc-type">Давление</p>
                             <p class="pres-value">%dМПа</p>
                             <div style="color: red" id="min-pres" class="pres-range">
                                 min
@@ -125,6 +144,8 @@
                 <input id="button-on" type="button" value="1-ый">
                 <input id="button-wait" type="button" value="2-ый">
                 <input id="button-off" type="button" value="3-ый">
+                <input id="button-water" type="button" value="4-ый">
+                <input id="button-doze" type="button" value="5-ый">
             </section>
         </main>
         <script type="module" src="js/main.js"></script>
